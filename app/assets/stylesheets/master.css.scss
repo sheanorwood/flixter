@@ -1,3 +1,7 @@
+.clr {
+  clear:both;
+}
+
 h1, h2, h3, h4, h5, h6,  .navbar {
   margin: 0;
 
@@ -49,8 +53,7 @@ frosty h2 {
 
 body {
   background: url('subtle_carbon.png');
-  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida,
-  "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .features {
   color: white;
@@ -60,10 +63,12 @@ body {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
-  background: #fff;
+  background: #333;
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   padding:10px;
+  color: #fff;
+  margin-top: 100px;
 }
 
 .booyah-box h2,  .booyah-box h1 {
