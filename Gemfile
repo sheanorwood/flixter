@@ -5,6 +5,10 @@ gem 'sprockets', '2.11.0'
 
 gem  'simple_form'
 
+group :development do
+  gem "rails-erd"
+end
+
 gem 'rails_12factor', group: :production
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
