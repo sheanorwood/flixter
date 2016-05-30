@@ -2,10 +2,10 @@ class Instructor::LessonsController < ApplicationController
     before_action  :authenticate_user!
     before_action  :require_authorized_for_current_section
 
+def new
+    @lesson = Lesson.new
+end
 
-    def new
-        @lesson  = Lesson.new
-    end
 
     def create
     @lesson = current_section.lessons.create(lesson_params)
