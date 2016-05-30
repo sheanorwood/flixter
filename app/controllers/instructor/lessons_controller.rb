@@ -21,12 +21,12 @@ end
     end
 
     def lesson_params
-        params.required(:lesson).permit(:title, :subtitle)
+        params.required(:lesson).permit(:title, :subtitle, :video)
     end
 
     helper_method   :current_section  #Tells Rails it can let the view call it
     def current_section
-        @current_section  | |= Section.find(params[ :section_id])
+        @current_section ||= Section.find(params[:section_id])
     end
 
 
