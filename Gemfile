@@ -5,6 +5,10 @@ gem 'sprockets', '2.11.0'
 
 gem 'carrierwave-aws'
 
+group :development do
+  gem "rails-erd"
+end
+
 gem 'fog'
 
 gem 'figaro'
