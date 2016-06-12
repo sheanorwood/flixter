@@ -7,6 +7,7 @@ devise_for :users
   end
   resources :lessons, only: [:show]
   namespace :instructor do
+    resources :lessons, only: [:update]
     resources :sections, only: [] do
       resources :lessons, only: [:new, :create]
     end

@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'ranked-model'
 
+gem 'jquery-ui-rails'
+
 gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'sprockets', '2.11.0'
 

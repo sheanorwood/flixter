@@ -34,8 +34,7 @@
             data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
             data-amount="<%= (@course.cost * 100).to_i %>"
             data-name="Flixter"
-            data-description="<%= @course.title %> (<%= number_to_currency @course.cost %>)"
-            data-image="/assets/logo.png"> </script>
+            data-description="<%= @course.title %> (<%= number_to_currency @course.cost %>)"> </script>
         </form>
       <% end %>
     <% end %>
@@ -46,7 +45,7 @@
   </div>
 
   <div class="col-xs-12">
-    <% @course.sections.rank(:row_order).each do |section| %>
+    <% @course.sections.each do |section| %>
     <br /><br />
       <div class="section">
         <h3>
